@@ -1,0 +1,659 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-19T09:16:30.036Z",
+        "line": 28,
+        "name": "Test the URL redirection for the application",
+        "description": "",
+        "id": "test-the-e-commerce-app-landing-page;test-the-url-redirection-for-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 61983695000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user open the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 564411800,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user maximize the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_maximize_the_browser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3721552700,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user open the URL \"http://automationpractice.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://automationpractice.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDef.myFirstTest.user_open_the_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: Page title is incorrect expected:\u003c[My Store]\u003e but was:\u003c[508 Resource Limit Is Reached]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat stepDef.myFirstTest.user_is_gets_redirected_to(myFirstTest.java:47)\r\n\tat ✽.user is gets redirected to \"My Store\"(classpath:features/myFirstfeatureFile.feature:32)\r\n",
+              "duration": 32980600,
+              "status": "failed"
+            },
+            "line": 32,
+            "name": "user is gets redirected to \"My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Store\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDef.myFirstTest.user_is_gets_redirected_to(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 999100,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "user close the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@appRedirection"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-19T09:17:36.649Z",
+        "line": 36,
+        "name": "Registered user login test",
+        "description": "",
+        "id": "test-the-e-commerce-app-landing-page;registered-user-login-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8666278300,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user open the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2544354500,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user maximize the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_maximize_the_browser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29541240900,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user open the URL \"http://automationpractice.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://automationpractice.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDef.myFirstTest.user_open_the_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#SubmitLogin\"}\n  (Session info: chrome\u003d94.0.4606.81)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027KANCHAN\u0027, ip: \u0027192.168.0.104\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [e1de9466a932a1861e765bac28cfcc69, findElement {using\u003did, value\u003dSubmitLogin}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\\Users\\Hp\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:61611}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61611/devtoo..., se:cdpVersion: 94.0.4606.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e1de9466a932a1861e765bac28cfcc69\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat stepDef.myFirstTest.user_click_on_signin_butten(myFirstTest.java:71)\r\n\tat ✽.user click on signin butten(classpath:features/myFirstfeatureFile.feature:40)\r\n",
+              "duration": 24171480500,
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "user click on signin butten",
+            "match": {
+              "location": "stepDef.myFirstTest.user_click_on_signin_butten()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000700,
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "user enter his registered \"usertest123@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"usertest123@gmail.com\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDef.myFirstTest.user_enter_his_registered(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998300,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "user click on signin butten",
+            "match": {
+              "location": "stepDef.myFirstTest.user_click_on_signin_butten()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998300,
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "user first and last name is displayed as \"john patric\" in top right corner",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"john patric\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDef.myFirstTest.user_first_and_last_name_is_displayed_as_in_top_right_corner(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 998800,
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "user close the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@appLogin"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-19T09:18:41.629Z",
+        "line": 47,
+        "name": "App main category list validation",
+        "description": "",
+        "id": "test-the-e-commerce-app-landing-page;app-main-category-list-validation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25770400500,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user open the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1185031900,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "user maximize the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_maximize_the_browser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24895928200,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user open the URL \"http://automationpractice.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://automationpractice.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDef.myFirstTest.user_open_the_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14999692300,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user is able to see the main categories",
+            "match": {
+              "location": "stepDef.myFirstTest.user_is_able_to_see_the_main_categories(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "WOMEN"
+                ]
+              },
+              {
+                "cells": [
+                  "DRESSES"
+                ]
+              },
+              {
+                "cells": [
+                  "T-SHIRT"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20943113500,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "user close the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@appMainList"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-19T09:20:09.447Z",
+        "line": 68,
+        "name": "user is able to search multiple products",
+        "description": "",
+        "id": "test-the-e-commerce-app-landing-page;user-is-able-to-search-multiple-products;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8892007700,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user open the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2250786300,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "user maximize the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_maximize_the_browser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19723269900,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "user open the URL \"http://automationpractice.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://automationpractice.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDef.myFirstTest.user_open_the_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13665396100,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user search for product \"T-shirt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"T-shirt\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDef.myFirstTest.user_search_for_product(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 142859400,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "Search result page is displayed",
+            "match": {
+              "location": "stepDef.myFirstTest.search_result_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 617069000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "user close the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@search"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-19T09:20:54.801Z",
+        "line": 69,
+        "name": "user is able to search multiple products",
+        "description": "",
+        "id": "test-the-e-commerce-app-landing-page;user-is-able-to-search-multiple-products;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5871147100,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user open the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1242599000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "user maximize the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_maximize_the_browser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26624867400,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "user open the URL \"http://automationpractice.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://automationpractice.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDef.myFirstTest.user_open_the_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6032308800,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user search for product \"Dresses\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dresses\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDef.myFirstTest.user_search_for_product(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20046723600,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "Search result page is displayed",
+            "match": {
+              "location": "stepDef.myFirstTest.search_result_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 513958600,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "user close the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@search"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-19T09:21:55.152Z",
+        "line": 70,
+        "name": "user is able to search multiple products",
+        "description": "",
+        "id": "test-the-e-commerce-app-landing-page;user-is-able-to-search-multiple-products;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4121655700,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user open the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2908343900,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "user maximize the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_maximize_the_browser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19815495500,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "user open the URL \"http://automationpractice.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://automationpractice.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDef.myFirstTest.user_open_the_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8997927600,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user search for product \"Casual\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Casual\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDef.myFirstTest.user_search_for_product(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 135087800,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "Search result page is displayed",
+            "match": {
+              "location": "stepDef.myFirstTest.search_result_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1744127000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "user close the browser",
+            "match": {
+              "location": "stepDef.myFirstTest.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@search"
+          }
+        ]
+      }
+    ],
+    "name": "Test the e-commerce app landing page",
+    "description": "         for smoke test\n      1.URL Redirection\n      2.Landing page title test",
+    "id": "test-the-e-commerce-app-landing-page",
+    "keyword": "Feature",
+    "uri": "classpath:features/myFirstfeatureFile.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
